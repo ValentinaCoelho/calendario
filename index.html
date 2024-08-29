@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calendar">
+        <div id="month-header">
+            <button id="prev-month">&lt;</button>
+            <h2 id="month-name"></h2>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="days-of-week">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+        <div id="calendar-days"></div>
+    </div>
+
+    <div id="event-section">
+        <h3>Adicionar Evento</h3>
+        <input type="date" id="event-date">
+        <input type="text" id="event-name" placeholder="Nome do Evento">
+        <button id="add-event">Adicionar Evento</button>
+
+        <h3>Eventos</h3>
+        <ul id="event-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
